@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./navbar/index.css">
+  <link rel="stylesheet" href="./shorts/index.css">
+  <link rel="stylesheet" href="./teex/index.css">
+  <link rel="stylesheet" href="./helium/index.css">
+  <link rel="stylesheet" href="./bank/index.css">
+
+  <script src="./index.js"        defer></script>
+  <script src="./shorts/index.js" defer></script>
+  <script src="./navbar/index.js" defer></script>
+  <script src="./teex/index.js" defer></script>
+  <script src="./helium/index.js" defer></script>
+
+  <title>Manon Piette</title>
+</head>
+<body>
+
+  <nav>
+    <div class="toggle"></div>
+    <div class="cont">
+      <ul>
+        <li class="active">Helium</li>
+        <li>Bank'app</li>
+        <li>Shorts</li>
+        <li>Font</li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <article id="helium">
+      <h1>HELIUM</h1>
+      <div class="project-preview">
+        <img src="./helium/rsc/home.webp" alt="" class="center">
+        <img src="./helium/rsc/listen.webp" alt="" class="right">
+        <img src="./helium/rsc/playlist.webp" alt="" class="left">
+      </div>
+      <p>LOREM IPSUM DOLOR SIT AMET</p>
+    </article>
+
+    <article id="bank">
+      <h1>BANk'APP</h1>
+      <div class="project-preview">
+        <div class="cont">
+          <img src="./bank/1_interface.webp" alt="">
+          <img src="./bank/2_interface.webp" alt="">
+          <img src="./bank/3_interface.webp" alt="">
+        </div>
+      </div>
+      <p>LOREM IPSUM DOLOR SIT AMET</p>
+    </article>
+
+    <article id="shorts">
+      <div class="row-cont">
+        <div class="col-cont">
+          <div class="sh-project-preview" onclick="zoom(1)" id="kronos"></div>
+          <div class="sh-project-preview" onclick="zoom(2)" id="teex">
+            <div class="sizer">
+              <img src="teex/rsc/1.svg"  alt="" class="icon i1">
+              <img src="teex/rsc/2.svg"  alt="" class="icon i2 blur">
+              <img src="teex/rsc/3.svg"  alt="" class="icon i3">
+              <img src="teex/rsc/4.svg"  alt="" class="icon i4">
+              <img src="teex/rsc/5.svg"  alt="" class="icon i5">
+              <img src="teex/rsc/6.svg"  alt="" class="icon i6">
+              <img src="teex/rsc/7.svg"  alt="" class="icon i7 blur">
+              <img src="teex/rsc/8.svg"  alt="" class="icon i8">
+              <img src="teex/rsc/9.svg"  alt="" class="icon i9">
+              <img src="teex/rsc/10.svg" alt="" class="icon i10">
+              <img src="teex/rsc/11.svg" alt="" class="icon i11">
+              <img src="teex/rsc/12.svg" alt="" class="icon i12 blur">
+              <img src="teex/rsc/13.svg" alt="" class="icon i13">
+              <img src="teex/rsc/14.svg" alt="" class="icon i14">
+
+              <img src="teex/rsc/logo.svg" alt="" class="logo">
+            </div>
+          </div>
+        </div>
+        <div class="col-cont">
+          <div class="sh-project-preview" onclick="zoom(3)"></div>
+          <div class="sh-project-preview" onclick="zoom(4)"></div>
+        </div>
+      </div>
+    </article>
+  </main>
+  
+</body>
+</html>
