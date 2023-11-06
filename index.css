@@ -9,6 +9,10 @@
     --grey-text : #B3B3B3;
 }
 
+html{
+    width: 100%;
+    overflow-x: hidden;
+}
 body{padding: 200px 0;}
 main{
     width: calc(100% - 55px);
