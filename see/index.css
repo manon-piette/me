@@ -1,0 +1,59 @@
+button.see{
+    background: rgba(0, 0, 0, 0.4);
+    /* background-color: red; */
+    overflow: hidden;
+    backdrop-filter: blur(3.5px);
+    border: 2px solid rgba(255, 255, 255, 0.187);
+    outline: none;
+    color: white;
+
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+
+    padding: 8px;
+
+    border-radius: 200px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    transition: width 0.3s;
+
+    z-index: 200;
+}
+
+button.see p{
+    margin: 0;
+    position: absolute;
+    top: 50%; left: 50px;
+    width: 130px;
+    transform: translateY(-50%);
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.9);
+}
+button.see img{
+    width: 30px !important;
+    height: 30px !important;
+    transition: transform 0.5s !important;
+    position: static !important;
+    opacity: 0.8;
+}
+
+
+.project-preview:hover{
+    cursor: pointer;
+}
+
+
+#helium .project-preview:hover button.see{width: 200px;}
+
+
+/* 
+<button class="click to view the site">
+    <img src="./see .svg">
+    <p>click to view the site</p>
+</button>
+*/

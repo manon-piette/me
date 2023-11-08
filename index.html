@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./index.css">
   <link rel="stylesheet" href="./navbar/index.css">
@@ -15,6 +16,8 @@
   <link rel="stylesheet" href="./teex/index.css">
   <link rel="stylesheet" href="./helium/index.css">
   <link rel="stylesheet" href="./bank/index.css">
+  <link rel="stylesheet" href="./see/index.css">
+  <link rel="stylesheet" href="./kronos/index.css">
 
   <script src="./index.js"        defer></script>
   <script src="./shorts/index.js" defer></script>
@@ -32,7 +35,7 @@
       <ul>
         <li onclick="scrollToId('helium')">Helium</li>
         <li onclick="scrollToId('bank')">Bank'app</a></a></li>
-        <li onclick="scrollToId('shorts')">Shorts</li>
+        <li onclick="scrollToId('kronos')">kronos</li>
         <!-- <li><a href="#font">Font</a></li> -->
       </ul>
     </div>
@@ -41,7 +44,11 @@
   <main>
     <article id="helium">
       <h1>HELIUM</h1>
-      <div class="project-preview">
+      <div class="project-preview" onclick="window.location.href = 'https://manon-piette.github.io/helium';">
+        <button class="see">
+          <img src="./see/see.svg" alt="">
+          <p>click to see website</p>
+        </button>
         <img src="./helium/rsc/home.webp" alt="" class="center">
         <img src="./helium/rsc/listen.webp" alt="" class="right">
         <img src="./helium/rsc/playlist.webp" alt="" class="left">
@@ -51,7 +58,11 @@
 
     <article id="bank">
       <h1>BANk'APP</h1>
-      <div class="project-preview">
+      <div class="project-preview" onclick="window.location.href = 'https://manon-piette.github.io/bank-app';">
+        <button class="see">
+          <img src="./see/see.svg" alt="">
+          <p>click to see website</p>
+        </button>
         <div class="cont">
           <img src="./bank/1_interface.webp" alt="">
           <img src="./bank/2_interface.webp" alt="">
@@ -61,37 +72,22 @@
       <p>LOREM IPSUM DOLOR SIT AMET</p>
     </article>
 
-    <article id="shorts">
-      <div class="row-cont">
-        <div class="col-cont">
-          <div class="sh-project-preview" onclick="zoom(1)" id="kronos"></div>
-          <div class="sh-project-preview" onclick="zoom(2)" id="teex">
-            <div class="sizer">
-              <img src="teex/rsc/1.svg"  alt="" class="icon i1">
-              <img src="teex/rsc/2.svg"  alt="" class="icon i2 blur">
-              <img src="teex/rsc/3.svg"  alt="" class="icon i3">
-              <img src="teex/rsc/4.svg"  alt="" class="icon i4">
-              <img src="teex/rsc/5.svg"  alt="" class="icon i5">
-              <img src="teex/rsc/6.svg"  alt="" class="icon i6">
-              <img src="teex/rsc/7.svg"  alt="" class="icon i7 blur">
-              <img src="teex/rsc/8.svg"  alt="" class="icon i8">
-              <img src="teex/rsc/9.svg"  alt="" class="icon i9">
-              <img src="teex/rsc/10.svg" alt="" class="icon i10">
-              <img src="teex/rsc/11.svg" alt="" class="icon i11">
-              <img src="teex/rsc/12.svg" alt="" class="icon i12 blur">
-              <img src="teex/rsc/13.svg" alt="" class="icon i13">
-              <img src="teex/rsc/14.svg" alt="" class="icon i14">
-
-              <img src="teex/rsc/logo.svg" alt="" class="logo">
-            </div>
-          </div>
-        </div>
-        <div class="col-cont">
-          <div class="sh-project-preview" onclick="zoom(3)"></div>
-          <div class="sh-project-preview" onclick="zoom(4)"></div>
+    <article id="kronos">
+      <h1>Kronos Website</h1>
+      <div class="project-preview" onclick="window.location.href = 'https://manon-piette.github.io/kronos';">
+        <button class="see">
+          <img src="./see/see.svg" alt="">
+          <p>click to see website</p>
+        </button>
+        <div class="cont">
+          <h1>Kronos</h1>
+          <img src="./kronos/r1.webp" alt="">
         </div>
       </div>
+      <p>LOREM IPSUM DOLOR SIT AMET</p>
     </article>
+
+    
   </main>
   
 </body>

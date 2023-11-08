@@ -1,7 +1,5 @@
 window.addEventListener("load", function() {
     navbar_load();
-    shorts_load();
-    teex_load();
     helium_load()
 })
 
