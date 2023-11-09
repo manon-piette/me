@@ -47,7 +47,9 @@ button.see img{
     cursor: pointer;
 }
 
-
+button.see:hover{
+    cursor: pointer;
+}
 #helium .project-preview:hover button.see{width: 200px;}
 
 
