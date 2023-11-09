@@ -6,7 +6,7 @@
     font-family: 'Sora', sans-serif;
 
     --base-text : #000000;
-    --grey-text : #B3B3B3;
+    --grey-text : #c5c5c5;
 }
 
 html{
@@ -37,10 +37,12 @@ article .project-preview{
 
 article > p {
     color: var(--grey-text);
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 300;
     text-align: center;
+    margin: 0 auto;
     margin-top: 25px;
+    width: 60%;
 }
 
 
