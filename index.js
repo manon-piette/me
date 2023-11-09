@@ -1,4 +1,5 @@
 window.addEventListener("load", function() {
+    document.querySelector("html").style.overflow = "hidden"
     navbar_load();
     helium_load()
 })
@@ -7,6 +8,18 @@ window.addEventListener('resize', function(){
     teex_scale();
 });
 
+function enter(){
+        
+    setTimeout(function() {
+        document.querySelector("header").style.opacity = 0;
+        document.querySelector("html").style.overflow = "scroll"
+    }, 100);
+    setTimeout(function() {
+        document.querySelector("header").style.display = "none";
+    }, 1000);
+
+
+}
 
 function scrollToId(id) {
     const targetElement = document.getElementById(id);
