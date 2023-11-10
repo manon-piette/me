@@ -1,7 +1,10 @@
 window.addEventListener("load", function() {
-    document.querySelector("html").style.overflow = "hidden"
+    if( document.querySelector("header").style.display == "block"){
+        document.querySelector("html").style.overflow = "hidden"
+    }
+    
     navbar_load();
-    helium_load()
+    helium_load();
 })
 
 window.addEventListener('resize', function(){
