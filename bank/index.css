@@ -21,15 +21,5 @@
 #bank .cont img:nth-child(2){
     opacity: 1;
 }
-#bank div.project-preview:hover > .cont img:first-child{
-    opacity: 1;
-    transform: scale(1.02);
-}
-#bank div.project-preview:hover > .cont img:last-child{
-    opacity: 1;
-    transform: scale(1.02);
-}
-#bank div.project-preview:hover > .cont img:nth-child(2){
-    transform: scale(1.02);
-}
+
 #bank .project-preview:hover button.see{width: 200px;}

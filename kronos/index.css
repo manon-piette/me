@@ -3,24 +3,30 @@
     position: relative;
     z-index: 200;
 }
-#kronos .project-preview h1{
-    font-size: 150px;
-    color: white;
-    opacity: 0.5;
-    position: absolute;
-    top: 30% ;left: 50%;
+#kronos .project-preview .cont{
+    /* background-color: red; */
+    /* width: 20px; */
+    height: 60%;
+    aspect-ratio: 1.58;
+    top: 50%;left: 50%;
     transform: translate(-50%, -50%);
-
-    transition: opacity 0.6s, transform 0.6s;
+    position: absolute;
 }
 #kronos .project-preview .cont img{
     position: absolute;
     height: 100%;
-    max-height: 1000px;
+    max-height: 100%;
     top: 50%;left: 50%;
     transform: translate(-50%, -50%);
 }
-
+#kronos .project-preview .glow{
+    width: 80%;
+    margin: 10px auto 0 auto;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.6);
+    filter: blur(80px);
+    /* position: absolute; */
+}
 
 #kronos .project-preview:hover h1{
     opacity: 1;
