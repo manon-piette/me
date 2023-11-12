@@ -1,22 +1,32 @@
 #helium div.project-preview{position: relative;}
-#helium img{
-    height: 60%;
+
+
+#helium .cont{
     position: absolute;
     top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: red; */
 
-    transition: all 1s ease;
+    height: 65%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+#helium img{
+    transition: transform 1s ease;
 }
 
 #helium img.center{
-    transform: translate(-50%, -50%);
+    
     z-index: 10;
 }
 
 #helium img.left{
-    transform: translate(-50%, -50%);
+    transform:  translateX( -100%) translateY(0%);
     opacity: 0;
 }
 #helium img.right{
-    transform: translate(-50%, -50%);
+    transform:  translateX( 100%) translateY(0%);
     opacity: 0;
 }

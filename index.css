@@ -45,11 +45,73 @@ article > p {
     width: 60%;
 }
 
-
-
-
-
+.cont{
+    /* background-color: red; */
+}
 
 ::-webkit-scrollbar {
     display: none;
   }
+
+
+@media screen and (max-width: 1000px) {
+    body{
+        /* background-color: rgba(255, 0, 0, 0.208); */
+    }
+    main h1{
+        font-size: 120px;
+    }
+    article > p {
+        width: 90%;
+    }
+}
+
+
+*{
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none !important;
+}
+
+
+@media screen and (max-width: 800px) {
+    body{
+        /* background-color: rgba(255, 0, 0, 0.53); */
+    }
+    main h1{
+        font-size: 80px;
+        text-align: center;
+    }
+    article > p {
+        width: 80%;
+        font-size: 12px;
+    }
+
+    article{
+        margin-bottom: 100px;
+    }
+    article .project-preview{
+        height: 50vh;
+    }
+
+    footer{
+        transform: scale(0.7);
+    }
+}
+
+@media screen and (max-width: 400px){
+    body{
+        /* background-color: rgba(255, 0, 0, 0.7); */
+    }
+    main h1{
+        font-size: 50px;
+        text-align: center;
+    }
+    main > p {
+        font-size: 10px;
+        text-align: center;
+    }
+    footer{
+        transform: scale(0.6);
+    }
+
+}

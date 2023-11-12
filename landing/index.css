@@ -75,6 +75,7 @@ header p.subline{
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
+    text-align: center;
 }
 
 @keyframes cta {

@@ -78,7 +78,7 @@ footer article button p{
     color: white;
     width: fit-content;
 }
-footer article div.cont{
+footer article div.container{
     position: absolute;
     top: -25px;
     right: -70px;
@@ -88,14 +88,14 @@ footer article div.cont{
     border-radius: 100px;
     transition: transform 0.3s;
 }
-footer article div.cont img.in{
+footer article div.container img.in{
     width: fit-content;
     border-radius: 00px;
     width: 16px;
     display: block;
-
 }
-footer article div.cont:hover{
+
+footer article div.container:hover{
     cursor: pointer;
     transform: scale(1.1);
 }

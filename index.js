@@ -1,29 +1,59 @@
+
+function resize_preview(){
+
+    portrait = false;
+    if(document.querySelector('main .project-preview').offsetHeight > document.querySelector('main .project-preview').offsetWidth){
+        portrait = true
+    }
+
+    document.querySelectorAll('main .cont').forEach(e=>{
+        if(portrait){
+            e.style.height = "auto";
+            e.style.width = "80%";
+            e.querySelectorAll('img').forEach(i=>{
+                i.style.height = "auto"
+                i.style.width = "100%"
+                console.log("portrait");
+            })
+        }
+        else{
+            e.style.width = "auto";
+            e.style.height = "65%";
+            e.querySelectorAll('img').forEach(i=>{
+                i.style.width = "auto"
+                i.style.height = e.offsetHeight + "px";
+                console.log("paysage");
+            })
+        }
+    })
+}
+window.addEventListener("resize",resize_preview)
 window.addEventListener("load", function() {
 
     var landing = document.querySelector("header");
     if( window.getComputedStyle(landing).getPropertyValue('display') === 'block'){
         document.querySelector("main").style.display = "none"
-        console.log("block")
+        console.log("block");
     }
-    
     navbar_load();
-    helium_load();
+    // resize_preview();
 })
 
+document.addEventListener('DOMContentLoaded',resize_preview);
 
 window.addEventListener('scroll', function(){
     if (isVisible('helium-trigger',0.3)){
-        document.querySelector(`#helium img.right`).style.transform = `translateX( 10% ) translateY(-54% )`;
+        document.querySelector(`#helium img.right`).style.transform = `translateX(40%) translateY(-4%)`;
         document.querySelector(`#helium img.right`).style.opacity = "0.5"
 
-        document.querySelector(`#helium img.left`).style.transform = `translateX( -110%) translateY( -54% )`;
+        document.querySelector(`#helium img.left`).style.transform = `translateX( -40%) translateY(-4%)`;
         document.querySelector(`#helium img.left`).style.opacity = "0.5"
     }
     else{
-        document.querySelector(`#helium img.right`).style.transform = `translateX( -50%) translateY(-50%)`;
+        document.querySelector(`#helium img.right`).style.transform = `translateX( 100%) translateY(0%)`;
         document.querySelector(`#helium img.right`).style.opacity = "0"
 
-        document.querySelector(`#helium img.left`).style.transform = `translateX( -50%) translateY(-50%)`;
+        document.querySelector(`#helium img.left`).style.transform = `translateX( -100%) translateY(0%)`;
         document.querySelector(`#helium img.left`).style.opacity = "0"
     }
 
