@@ -13,6 +13,7 @@ button.see{
     align-items: center;
 
 
+
     padding: 8px;
 
     border-radius: 200px;
@@ -37,7 +38,7 @@ button.see p{
 button.see img{
     width: 30px !important;
     height: 30px !important;
-    transition: transform 0.5s !important;
+    /* transition: transform 0.5s !important; */
     position: static !important;
     opacity: 0.8;
 }
@@ -53,6 +54,16 @@ button.see:hover{
 #helium .project-preview:hover button.see{width: 200px;}
 
 
+
+@media screen and (max-width: 400px){
+
+    button.see{
+        transform: scale(0.6);
+    }
+
+    .project-preview:hover button.see{width: 50px !important;}
+
+}
 /* 
 <button class="click to view the site">
     <img src="./see .svg">

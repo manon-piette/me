@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="./kronos/index.css">
   <link rel="stylesheet" href="./sign/index.css">
   <link rel="stylesheet" href="./landing/index.css">
+  <link rel="stylesheet" href="./about-me/index.css">
 
   <script src="./index.js"        defer></script>
   <script src="./navbar/index.js" defer></script>
@@ -56,6 +57,7 @@
       <ul>
         <li onclick="scrollToId('helium')">Helium</li>
         <li onclick="scrollToId('bank')">Bank'app</li>
+        <li onclick="scrollToId('about')">About me</li>
         <li onclick="scrollToId('kronos')">kronos</li>
         <li onclick="scrollToId('profile')">profile</li>
         <!-- <li><a href="#font">Font</a></li> -->
@@ -96,6 +98,20 @@
       <p>Bank'App is a mobile banking interface design project completed in a weekend. It features a user-friendly design with a Dark theme and colorful cards to highlight essential information, such as spending, spending categories and account selection. The aim was to rethink the overall design in two days, which enriched the thinking behind the layout of the elements.</p>
     </article>
 
+    <article id="about">
+      <h1>About me</h1>
+      <div class="project-preview" onclick="window.location.href = 'https://manon-piette.github.io/about-me';">
+        <button class="see">
+          <img src="./see/see_black.svg" alt="">
+          <p>click to see website</p>
+        </button>
+        <div class="cont" id="about-trigger">
+          <img src="./about-me/frame.svg" alt="">
+        </div>
+      </div>
+      <p>About Me is a site designed to highlight my professional background and skills. Through colorful design and subtle animations, it offers an immersive experience, visually summarizing my expertise and passion in a captivating way.</p>
+    </article>
+
     <article id="kronos">
       <h1>Kronos Website</h1>
       <div class="project-preview" onclick="window.location.href = 'https://manon-piette.github.io/kronos';">
@@ -103,7 +119,7 @@
           <img src="./see/see.svg" alt="">
           <p>click to see website</p>
         </button>
-        <div class="cont">
+        <div class="cont" id="kronos-trigger">
           <div class="glow"></div>
           <img src="./kronos/kronos_mockup.webp" alt="">
         </div>

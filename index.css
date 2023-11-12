@@ -54,7 +54,7 @@ article > p {
   }
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
     body{
         /* background-color: rgba(255, 0, 0, 0.208); */
     }
@@ -75,15 +75,17 @@ article > p {
 
 @media screen and (max-width: 800px) {
     body{
-        /* background-color: rgba(255, 0, 0, 0.53); */
+        /* background-color: rgba(0, 60, 255, 0.53); */
     }
     main h1{
         font-size: 80px;
         text-align: center;
     }
     article > p {
-        width: 80%;
+        width: 95%;
         font-size: 12px;
+        text-align: left;
+        text-justify: inter-word;
     }
 
     article{
@@ -97,10 +99,15 @@ article > p {
         transform: scale(0.7);
     }
 }
+/* @media screen and (max-width: 650px){
+    #about .cont{
+        transform: scale(0.8);
+    }
+} */
 
 @media screen and (max-width: 400px){
     body{
-        /* background-color: rgba(255, 0, 0, 0.7); */
+        /* background-color: rgb(178, 121, 182); */
     }
     main h1{
         font-size: 50px;
@@ -108,10 +115,15 @@ article > p {
     }
     main > p {
         font-size: 10px;
-        text-align: center;
+        text-align: left;
     }
     footer{
         transform: scale(0.6);
     }
 
+    body{padding: 100px 0;}
+
+    #bank .cont{
+        gap: 10px !important;
+    }
 }

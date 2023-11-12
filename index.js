@@ -2,11 +2,11 @@
 function resize_preview(){
 
     portrait = false;
-    if(document.querySelector('main .project-preview').offsetHeight > document.querySelector('main .project-preview').offsetWidth){
+    if(document.querySelector('main .project-preview').offsetHeight > document.querySelector('main .project-preview').offsetWidth * 0.8){
         portrait = true
     }
 
-    document.querySelectorAll('main .cont').forEach(e=>{
+    e = document.querySelectorAll('main .cont').forEach(e=>{
         if(portrait){
             e.style.height = "auto";
             e.style.width = "80%";
@@ -26,6 +26,8 @@ function resize_preview(){
             })
         }
     })
+
+
 }
 window.addEventListener("resize",resize_preview)
 window.addEventListener("load", function() {
@@ -75,6 +77,22 @@ window.addEventListener('scroll', function(){
 
         document.querySelector('#bank div.project-preview .cont img:nth-child(2)').style.transform = "scale(1)";
 
+    }
+
+    if (isVisible('about-trigger',0.3)){
+        document.querySelector('#about div.project-preview .cont img').style.transform = "scale(0.95)";
+        console.log("vvv")
+    }
+    else{
+        document.querySelector('#about div.project-preview .cont img').style.transform = "scale(0.9)";
+    }
+
+    if (isVisible('kronos-trigger',0.3)){
+        document.querySelector('#kronos div.project-preview .cont img').style.transform = "scale(1)";
+        console.log("vvv")
+    }
+    else{
+        document.querySelector('#kronos div.project-preview .cont img').style.transform = "scale(0.95)";
     }
 
 });

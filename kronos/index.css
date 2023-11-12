@@ -13,6 +13,7 @@
 }
 #kronos .project-preview .cont img{
     height: 100%;
+    transition: transform 1s ease-in-out;
 }
 #kronos .project-preview .glow{
     width: 100%;
