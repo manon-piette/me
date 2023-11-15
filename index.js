@@ -34,9 +34,12 @@ window.addEventListener("load", function() {
 
 
     var landing = document.querySelector("header");
+    console.log(window.location.href);
+    console.log(window.location.href.includes("/#/back"));
     if(window.location.href.includes("/#/back")){
-        landing.style.display == 'none';
-        document.querySelector("main").style.display = "block"
+        landing.style.display = 'none';
+        document.querySelector("main").style.display = "block";
+        console.log("back")
     }
     else{
         if( window.getComputedStyle(landing).getPropertyValue('display') === 'block'){
