@@ -32,10 +32,16 @@ function resize_preview(){
 window.addEventListener("resize",resize_preview)
 window.addEventListener("load", function() {
 
+
     var landing = document.querySelector("header");
-    if( window.getComputedStyle(landing).getPropertyValue('display') === 'block'){
-        document.querySelector("main").style.display = "none"
-        console.log("block");
+    if(window.location.href.includes("/#/back")){
+        landing.style.display == 'none';
+        document.querySelector("main").style.display = "block"
+    }
+    else{
+        if( window.getComputedStyle(landing).getPropertyValue('display') === 'block'){
+            document.querySelector("main").style.display = "none"
+        }
     }
     navbar_load();
     // resize_preview();
