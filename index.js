@@ -44,6 +44,7 @@ window.addEventListener("load", function() {
     else{
         if( window.getComputedStyle(landing).getPropertyValue('display') === 'block'){
             document.querySelector("main").style.display = "none"
+
         }
     }
     navbar_load();
